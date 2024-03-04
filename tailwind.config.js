@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         'darkblue': '#132745',
         'primary-100': '#32FFCE',
+      },
+      backgroundImage: {
+        'img': '/public/img/image\ 1.png'
       }
     },
   },
