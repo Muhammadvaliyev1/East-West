@@ -6,3 +6,7 @@
   background-image: url(/public/img/image1.png);
   background-size: cover;
 } */
+
+html {
+  scroll-behavior: smooth;
+}
