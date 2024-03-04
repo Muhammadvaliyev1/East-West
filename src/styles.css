@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-img {
-  background-image: url(/public/img/image\ 1.png);
+/* .bg-img {
+  background-image: url(/public/img/image1.png);
   background-size: cover;
-}
+} */

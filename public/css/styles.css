@@ -608,7 +608,10 @@ video {
   --tw-bg-opacity: 0.1;
 }
 .bg-img {
-  background-image: /public/img/image 1.png;
+  background-image: url('../img/image1.png');
+}
+.bg-cover {
+  background-size: cover;
 }
 .fill-darkblue {
   fill: #132745;
@@ -681,10 +684,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.bg-img {
-  background-image: url(/public/img/image\ 1.png);
+/* .bg-img {
+  background-image: url(/public/img/image1.png);
   background-size: cover;
-}
+} */
 
 @media (min-width: 768px) {
 

@@ -12,7 +12,7 @@ module.exports = {
         'primary-100': '#32FFCE',
       },
       backgroundImage: {
-        'img': '/public/img/image\ 1.png'
+        'img': "url('../img/image1.png')"
       }
     },
   },
