@@ -10,15 +10,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <title>East West Recruitment</title>
+  <style>
+    #close {
+        display: none;
+    }
+  </style>
 </head>
-<body>
+<body id="budy" class="relative">
   <header class="bg-darkblue py-5">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-2">
       <a href="/" class="flex items-center justify-start w-28 h-14">
         <img class="w-14" src="./img/White logo - no background.png" alt="logo">
         <img src="./img/White logo - no backgroun.png" alt="logo">
       </a>
-      <a href="#mission">mission</a>
+      <div class="hidden sm:flex items-center justify-start text-white uppercase font-Manrope text-lg font-medium gap-x-5">
+        <a href="#mission" class="relative before:w-0 hover:before:w-full before:h-0.5 before:transition-all before:duration-400 before:bg-primary-100 before:absolute before:top-7">Mission</a>
+        <a href="#services" class="relative before:w-0 hover:before:w-full before:h-0.5 before:transition-all before:duration-400 before:bg-primary-100 before:absolute before:top-7">Services</a>
+        <a href="#jobs" class="relative before:w-0 hover:before:w-full before:h-0.5 before:transition-all before:duration-400 before:bg-primary-100 before:absolute before:top-7">Jobs</a>
+        <a href="#contact" class="relative before:w-0 hover:before:w-full before:h-0.5 before:transition-all before:duration-400 before:bg-primary-100 before:absolute before:top-7">Contact</a>
+      </div>
+      <button id="hello" class="hunburger burger flex sm:hidden">
+        <span></span>
+      </button>
     </div>
   </header>
 
@@ -57,7 +70,7 @@
           <h3 class="max-w-[609px] font-ArchivoBlack text-3xl md:text-5xl font-light text-darkblue mt-2 md:mt-5">
             We’ve managed over 2.5 million candidates
           </h3>
-          <p class="max-w-xl font-Manrope text-xl font-light mt-5 md:mt-10">
+          <p class="max-w-xl font-Manrope text-lg md:text-xl font-light mt-5 md:mt-10">
             "Our mission at East West Group Recruitment Agency
 is to bridge the gap between talented candidates and
 esteemed hospitality and retail organizations. We are
@@ -78,13 +91,13 @@ individuals and businesses within the industry."
       </div>
     </section>
     <section id="services" class="relative mt-20">
-      <div class="max-w-7xl mx-auto text-center">
+      <div class="max-w-7xl mx-auto text-center px-2">
         <h4 class="uppercase text-primary-100 font-Manrope text-xl md:text-3xl font-extrabold">SPECIAL SERVICE</h4>
         <h3 class="max-w-[854px] mx-auto font-ArchivoBlack text-3xl md:text-5xl font-light text-darkblue mt-2 md:mt-5">
           Assist you to find a job that matches with your goal
         </h3>
-        <div class="grid grid-cols-4 gap-7 mt-16">
-          <div class="shadow-md border rounded-md text-left space-y-4 p-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-7 mt-16">
+          <div class="shadow-md border rounded-md text-left space-y-3 lg:space-y-4 p-6 lg:p-8">
             <div class="w-16 h-16">
               <img class="w-full h-full object-cover" src="./img/consultation.png" alt="consultation">
             </div>
@@ -93,7 +106,7 @@ individuals and businesses within the industry."
              It highlights the agency's consulting services and their goal of helping clients find the perfect job.
             </p>
           </div>
-          <div class="shadow-md border rounded-md text-left space-y-4 p-8">
+          <div class="shadow-md border rounded-md text-left space-y-3 lg:space-y-4 p-6 lg:p-8">
             <div class="w-16 h-16">
               <img class="w-full h-full object-cover" src="./img/development.png" alt="development">
             </div>
@@ -102,7 +115,7 @@ individuals and businesses within the industry."
               East West Group offers job training services to help people succeed in different fields.
             </p>
           </div>
-          <div class="shadow-md border rounded-md text-left space-y-4 p-8">
+          <div class="shadow-md border rounded-md text-left space-y-3 lg:space-y-4 p-6 lg:p-8">
             <div class="w-16 h-16">
               <img class="w-full h-full object-cover" src="./img/document.png" alt="document">
             </div>
@@ -111,7 +124,7 @@ individuals and businesses within the industry."
               Streamline hiring. We handle candidate documents, saving you time to find the perfect fit.
             </p>
           </div>
-          <div class="shadow-md border rounded-md text-left space-y-4 p-8">
+          <div class="shadow-md border rounded-md text-left space-y-3 lg:space-y-4 p-6 lg:p-8">
             <div class="w-16 h-16">
               <img class="w-full h-full object-cover" src="./img/candidate.png" alt="HIRING">
             </div>
@@ -123,9 +136,121 @@ individuals and businesses within the industry."
         </div>
       </div>
     </section>
+    <section id="jobs" class="mt-20">
+      <div class="max-w-7xl mx-auto px-2">
+        <h4 class="uppercase text-primary-100 font-Manrope text-xl md:text-3xl font-extrabold">JOBS</h4>
+        <div class="flex items-center justify-between">
+          <h3 class="max-w-[609px] font-ArchivoBlack text-3xl md:text-5xl font-light text-darkblue">
+            Latest Openings
+          </h3>
+          <a href="#" class="max-w-[40px] md:max-w-[77px] w-full bg-primary-100 flex items-center justify-center py-2.5 md:py-5">
+            <ion-icon class="w-4 h-4 md:w-8 md:h-8 md hydrated" name="arrow-forward-outline" role="img"></ion-icon>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 mt-10">
+          <div class="bg-darkblue hover:bg-primary-100 text-white hover:text-darkblue transition-colors duration-300 p-5 md:p-10">
+            <h5 class="font-Manrope text-2xl font-bold">Frontend Developer</h5>
+            <h6 class="font-Manrope text-xl font-light">Manchester, UK</h6>
+            <h4 class="font-Manrope text-xl font-light mt-7">£40000 - £55000 per annum</h4>
+            <p class="font-Manrope text-lg font-light mt-7">
+              Lorem ipsum dolor sit amet consectetur. Turpis sed pulvinar sed blandit rhoncus tellus senectus at quis. Mi at fermentum imperdiet velit magna a aliquam. Faucibus et quam ac elit placerat tristique vulputate
+            </p>
+          </div>
+          <div class="bg-darkblue hover:bg-primary-100 text-white hover:text-darkblue transition-colors duration-300 p-5 md:p-10">
+            <h5 class="font-Manrope text-2xl font-bold">Frontend Developer</h5>
+            <h6 class="font-Manrope text-xl font-light">Manchester, UK</h6>
+            <h4 class="font-Manrope text-xl font-light mt-7">£40000 - £55000 per annum</h4>
+            <p class="font-Manrope text-lg font-light mt-7">
+              Lorem ipsum dolor sit amet consectetur. Turpis sed pulvinar sed blandit rhoncus tellus senectus at quis. Mi at fermentum imperdiet velit magna a aliquam. Faucibus et quam ac elit placerat tristique vulputate
+            </p>
+          </div>
+          <div class="bg-darkblue hover:bg-primary-100 text-white hover:text-darkblue transition-colors duration-300 p-5 md:p-10">
+            <h5 class="font-Manrope text-2xl font-bold">Frontend Developer</h5>
+            <h6 class="font-Manrope text-xl font-light">Manchester, UK</h6>
+            <h4 class="font-Manrope text-xl font-light mt-7">£40000 - £55000 per annum</h4>
+            <p class="font-Manrope text-lg font-light mt-7">
+              Lorem ipsum dolor sit amet consectetur. Turpis sed pulvinar sed blandit rhoncus tellus senectus at quis. Mi at fermentum imperdiet velit magna a aliquam. Faucibus et quam ac elit placerat tristique vulputate
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <div id="hunburgerManu" class="-left-[650px] hunburgerManu bg-darkblue navbar-menu fixed flex flex-col items-center justify-center sm:hidden top-[96px] h-[890px] w-full transition-all ease-in-out duration-300 z-[99999]" style="height: calc(100% - 100px);">
+    <div class="flex flex-col items-start justify-start text-white uppercase font-Manrope text-lg font-medium gap-y-5">
+      <a href="#mission" class="relative before:w-0 hover:before:w-full before:h-0.5 before:transition-all before:duration-400 before:bg-primary-100 before:absolute before:top-7">Mission</a>
+      <a href="#services" class="relative before:w-0 hover:before:w-full before:h-0.5 before:transition-all before:duration-400 before:bg-primary-100 before:absolute before:top-7">Services</a>
+      <a href="#jobs" class="relative before:w-0 hover:before:w-full before:h-0.5 before:transition-all before:duration-400 before:bg-primary-100 before:absolute before:top-7">Jobs</a>
+      <a href="#contact" class="relative before:w-0 hover:before:w-full before:h-0.5 before:transition-all before:duration-400 before:bg-primary-100 before:absolute before:top-7">Contact</a>
+    </div>
+  </div>
+
+
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+    const dropdownBtn = document.getElementById('dropdown-btn');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    dropdownBtn.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('hidden');
+    });
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+            // open
+            const burger = document.querySelectorAll('.hunburger');
+            const menu = document.querySelectorAll('.navbar-menu');
+        
+            if (burger.length && menu.length) {
+                for (var i = 0; i < burger.length; i++) {
+                    burger[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('left-01');
+                        }
+                    });
+                }
+            }
+        
+            // close
+            const close = document.querySelectorAll('.navbar-close');
+            const backdrop = document.querySelectorAll('.navbar-backdrop');
+        
+            if (close.length) {
+                for (var i = 0; i < close.length; i++) {
+                    close[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        
+            if (backdrop.length) {
+                for (var i = 0; i < backdrop.length; i++) {
+                    backdrop[i].addEventListener('click', function() {
+                        for (var j = 0; j < menu.length; j++) {
+                            menu[j].classList.toggle('hidden');
+                        }
+                    });
+                }
+            }
+        });
+  </script>
+  <script>
+    const xburger = document.getElementById('hello');
+
+    xburger.addEventListener('click', () => {
+        xburger.classList.toggle('active');
+    });
+  </script> 
+  <script>
+    const budy = document.getElementById('budy');
+
+    xburger.addEventListener('click', () => {
+        budy.classList.toggle('overflow-hidden');
+    });
+  </script>
 </body>
 </html>

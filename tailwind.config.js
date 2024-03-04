@@ -13,7 +13,7 @@ module.exports = {
       },
       backgroundImage: {
         'img': "url('../img/image1.png')"
-      }
+      },
     },
   },
   plugins: [],
